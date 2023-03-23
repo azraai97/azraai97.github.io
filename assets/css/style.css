@@ -78,8 +78,8 @@ body.dark_theme {
 
   --bg-primary: hsl(0, 0%, 12%);
   --bg-secondary: hsl(0, 0%, 19%);
-  --color-primary: hsl(0, 0%, 100%);
-  --color-secondary: hsl(0, 0%, 62%);
+  --color-primary:#6A2C3E;
+  --color-secondary: #e7965f;
   --card-shadow: hsla(0, 0%, 0%, 0.4);
   --input-bg: hsl(0, 0%, 16%);
 
@@ -91,8 +91,8 @@ body.light_theme {
 
   --bg-primary: hsl(0, 0%, 90%);
   --bg-secondary: hsl(0, 0%, 100%);
-  --color-primary: hsl(0, 0%, 12%);
-  --color-secondary: hsl(0, 0%, 37%);
+  --color-primary: #6A2C3E;
+  --color-secondary: #e7965f;
   --card-shadow: hsla(0, 0%, 0%, 0.1);
   --input-bg: hsl(0, 0%, 93%);
 
@@ -220,13 +220,17 @@ body.active { overflow: hidden; }
   color: var(--bg-primary);
 }
 
-.btn-secondary {
-  background: var(--raw-seinna);
-  border-color: var(--raw-seinna);
-  color: var(--black);
+.btn-secondary { border-color: var(--color-secondary);
+                  color:#e7965f
+
 }
 
-.btn-secondary:is(:hover, :focus) { --raw-seinna: hsl(24, 74%, 64%); }
+
+
+.btn-secondary:is(:hover, :focus) {
+  background: var(--color-secondary);
+  color: var(--bg-secondary);
+}
 
 .section-subtitle {
   position: relative;
