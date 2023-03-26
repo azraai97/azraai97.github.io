@@ -1280,11 +1280,11 @@ textarea.input-field {
     gap: 30px;
   }
 
-  .contact-content { margin-bottom: 0; }
+  .contact-content { width: 100%; margin-bottom: 0; }
 
   .contact-form { width: 100%; }
 
-  .contact-list { margin-left: -40px; }
+  .contact-list {width: 100%; margin-left: -40px; }
 
 
 
